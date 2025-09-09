@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selvalakshmi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Selvalakshmi 👩‍💻</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Hi, I’m <span class="highlight">Selvalakshmi</span></h1>
+    <p id="typing-text"></p>
+    <button onclick="scrollToSection('projects')">🚀 View My Portfolio</button>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Passionate about coding, solving problems, and building apps that make life easier 💡.
+      Always learning and exploring new technologies 🚀.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">SQL</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>💻 Calculator App</h3>
+        <p>A simple Java-based calculator for Windows.</p>
+      </div>
+      <div class="project-card">
+        <h3>⚡ Medical Chatbot</h3>
+        <p>AI-powered chatbot to answer patient queries about health symptoms.</p>
+      </div>
+      <div class="project-card">
+        <h3>🩺 Potassium Detection Project</h3>
+        <p>Arduino-based project using pH sensor to detect potassium levels.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>My Resume</h2>
+    <button onclick="openResume()">📄 View Resume</button>
+    <a href="resume.pdf" download>
+      <button>⬇️ Download Resume</button>
+    </a>
+  </section>
+
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeResume()">&times;</span>
+      <embed src="resume.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/selvaaa</a></p>
+    <p>GitHub: <a href="#">github.com/selvaaa</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Selvaaa. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
